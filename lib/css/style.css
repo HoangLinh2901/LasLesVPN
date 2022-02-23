@@ -135,6 +135,7 @@ header #header .sign .in {
 }
 header #header .sign .in:hover {
   text-decoration: none;
+  color: #f53838;
 }
 header #header .sign .up {
   border: 1px solid #f53838;
