@@ -61,11 +61,21 @@
                 </div>
                 <nav>
                     <ul>
-                        <li><div class="page-choose"><a href="#">About</a></div></li>
-                        <li><div class="page-choose"><a href="#">Features</a></div></li>
-                        <li><div class="page-choose"><a href="#">Pricing</a></div></li>
-                        <li><div class="page-choose"><a href="#">Testimonials</a></div></li>
-                        <li><div class="page-choose"><a href="#">Help</a></div></li>
+                        <li>
+                            <div class="page-choose"><a href="#">About</a></div>
+                        </li>
+                        <li>
+                            <div class="page-choose"><a href="#">Features</a></div>
+                        </li>
+                        <li>
+                            <div class="page-choose"><a href="#">Pricing</a></div>
+                        </li>
+                        <li>
+                            <div class="page-choose"><a href="#">Testimonials</a></div>
+                        </li>
+                        <li>
+                            <div class="page-choose"><a href="#">Help</a></div>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -105,7 +115,7 @@
                             <img src="img/icon1.svg" alt="">
                         </div>
                         <div class="introduce-detail">
-                            <h4><span class="counter">90</span>+</h4>
+                            <h4><span class="counter" data-count="90"></span>+</h4>
                             <p>Users</p>
                         </div>
                     </div>
@@ -117,7 +127,7 @@
                             <img src="img/icon2.svg" alt="">
                         </div>
                         <div class="introduce-detail">
-                            <h4><span class="counter">30</span>+</h4>
+                            <h4><span class="counter" data-count="30"></span>+</h4>
                             <p>Locations</p>
                         </div>
                     </div>
@@ -129,7 +139,7 @@
                             <img src="img/icon3.svg" alt="">
                         </div>
                         <div class="introduce-detail">
-                            <h4><span class="counter">50</span>+</h4>
+                            <h4><span class="counter" data-count="50"></span>+</h4>
                             <p>Servers</p>
                         </div>
                     </div>
@@ -182,13 +192,14 @@
     <section class="plan">
         <div class="container">
             <div class="plan-pad">
-                <h4 data-aos="fade-up" data-aos-duration="1000">Choose Your Plan</h4>
-                <p class="plan-text" data-aos="fade-up" data-aos-duration="1100" data-aos-offset="200">Let's choose the package that is best
+                <h4 data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0">Choose Your Plan</h4>
+                <p class="plan-text" data-aos="fade-up" data-aos-duration="1100" data-aos-offset="0">Let's choose the
+                    package that is best
                     for you and explore it happily and
                     cheerfully.
                 </p>
                 <div class="plan-wrapper">
-                    <div class="plan-grid" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200">
+                    <div class="plan-grid" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
                         <div class="plan-wrap">
                             <img src="img/plan-img.svg" alt="">
                             <h4>Free Plan</h4>
@@ -214,7 +225,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="plan-grid" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="200">
+                    <div class="plan-grid" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="100">
                         <div class="plan-wrap">
                             <img src="img/plan-img.svg" alt="">
                             <h4>Standard Plan</h4>
@@ -240,7 +251,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="plan-grid" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="200">
+                    <div class="plan-grid" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="100">
                         <div class="plan-wrap">
                             <img src="img/plan-img.svg" alt="">
                             <h4>Premium Plan</h4>
@@ -280,10 +291,12 @@
     <section class="map">
         <div class="container">
             <div class="map-detail">
-                <h4 data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200">Huge Global Network <br> of Fast VPN</h4>
-                <p class="map-text" data-aos="fade-up" data-aos-duration="1100" data-aos-offset="200">See LaslesVPN everywhere to make it
+                <h4 data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0">Huge Global Network <br> of Fast
+                    VPN</h4>
+                <p class="map-text" data-aos="fade-up" data-aos-duration="1100" data-aos-offset="0">See LaslesVPN
+                    everywhere to make it
                     easier for you when you move locations.</p>
-                <img src="img/section-bg2.png" alt="" data-aos="fade-up" data-aos-duration="1200">
+                <img src="img/section-bg2.png" alt="" data-aos="fade-up" data-aos-duration="1200" data-aos-offset="0">
             </div>
             <div class="brand-list">
                 <img src="img/brand1.png" alt="" data-aos="fade-up-right" data-aos-duration="1500"
@@ -458,7 +471,8 @@
             <h5>Subscribe Now for Get Special Features!</h5>
             <p>Let's subscribe with us and find the fun.</p>
         </div>
-        <div class="sub-btn" data-aos="fade-right" data-aos-duration="1200" data-aos-offset="100"><button>Subscribe Now</button></div>
+        <div class="sub-btn" data-aos="fade-right" data-aos-duration="1200" data-aos-offset="100"><button>Subscribe
+                Now</button></div>
     </section>
     <!-- Section subcribe end -->
 
@@ -578,7 +592,7 @@
                             slidesToScroll: 1
                         }
                     }
-                    
+
                     // You can unslick at a given breakpoint now by adding:
                     // settings: "unslick"
                     // instead of a settings object
@@ -674,12 +688,35 @@
         })
     </script>
     <script>
-        $('.nav-bar').click(function() {
+        $('.nav-bar').click(function () {
             $('.sub-header').addClass('active-navbar');
         });
 
-        $('.close').click(function() {
+        $('.close').click(function () {
             $('.sub-header').removeClass('active-navbar');
+        });
+    </script>
+    <script>
+        $(".counter").each(function () {
+            var $this = $(this),
+                countTo = $this.attr("data-count");
+
+            $({ countNum: $this.text() }).animate(
+                {
+                    countNum: countTo,
+                },
+                {
+                    duration: 3000,
+                    easing: "linear",
+                    step: function () {
+                        $this.text(Math.floor(this.countNum));
+                    },
+                    complete: function () {
+                        $this.text(this.countNum);
+                        //alert('finished');
+                    },
+                }
+            );
         });
     </script>
 </body>
