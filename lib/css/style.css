@@ -505,6 +505,7 @@ article .article-bg img {
   width: 50px;
   height: 50px;
   margin-right: 20px;
+  border-radius: 50%;
 }
 .rate-user .rate .rate-tab .rate-wrap .user .user-rate {
   display: flex;
